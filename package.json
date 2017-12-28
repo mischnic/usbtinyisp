@@ -1,21 +1,21 @@
 {
   "name": "usbtinyisp",
-  "version": "0.0.3",
-  "description": "fully javascript usbtinyisp like adafruit usbtinyisp, mit fabisp or sparkfun tinyavr",
+  "version": "1.0.0",
+  "description": "Control an USBtinyISP programmer with node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jacobrosenthal/usbtinyisp"
+    "url": "https://github.com/mischnic/usbtinyisp"
   },
-  "author": "Jacob Rosenthal @jacobrosenthal",
+  "author": "Niklas Mischkulnig",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jacobrosenthal/usbtinyisp/issues"
+    "url": "https://github.com/mischnic/usbtinyisp/issues"
   },
-  "homepage": "https://github.com/jacobrosenthal/usbtinyisp",
+  "homepage": "https://github.com/mischnic/usbtinyisp",
   "dependencies": {
     "async": "^0.9.0",
     "delay": "^2.0.0",

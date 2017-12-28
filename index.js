@@ -64,7 +64,7 @@ usbtiny.prototype.setSCK = function(val, cb){
 
   var requesttype = 0xC0;
   var requestid = statics.USBTINY_POWERUP;
-  var index = statics.RESET_LOW;
+  var index = statics.RESET_HIGH;
   var length = 0;
 
   this.log('requesttype: ', requesttype.toString(16), ' requestid:', requestid.toString(16), ' val: ', val.toString(16), ' index: ', index.toString(16), ' buflen: ', length.toString(16));
@@ -85,6 +85,18 @@ usbtiny.prototype.spi = function(buffer, cb){
 
   this.device.controlTransfer(
     requesttype, requestid, val, index, length, cb);
+};
+
+usbtiny.prototype.spi1 = function(val, cb){
+
+  var requesttype = 0xC0;
+  var requestid = statics.USBTINY_SPI1;
+  var length = 1;
+
+  this.log('requesttype: ', requesttype.toString(16), ' requestid:', requestid.toString(16), ' val: ', val.toString(16), ' index: ', 0, ' buflen: ', length.toString(16));
+
+  this.device.controlTransfer(
+    requesttype, requestid, val, 0, length, cb);
 };
 
 usbtiny.prototype.readFlash = function(delay, address, length, cb){

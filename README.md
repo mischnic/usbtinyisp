@@ -1,2 +1,6 @@
-##usbtinyisp
-fully javascript usbtinyisp like [adafruit usbtinyisp](https://www.adafruit.com/product/46), [mit fabisp](http://fab.cba.mit.edu/content/projects/fabisp/) or [sparkfun tinyavr](https://www.sparkfun.com/products/11801). Allows you to program bootloaders or regular code onto attiny's (and probably more) straight from node (and soon the browser). No more avrdude system calls or using the arduino IDE.
+# usbtinyisp
+
+Control an USBtinyISP programmer using javascript/node.
+
+- Using it as an SPI adapter: [example/spi-example.js](example/spi-example.js)
+- Flashing a hex file: [example/attiny84.js](example/attiny84.js)
